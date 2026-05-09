@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kishalaya Sarangi — Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #1a1a2e;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 3px solid #e94560;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #e94560;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #a0a0b0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      background: #16213e;
+    }
+
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #e94560; }
+
+    section {
+      max-width: 860px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #e94560;
+      margin-bottom: 20px;
+      border-left: 4px solid #e94560;
+      padding-left: 12px;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: #c0c0d0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      background: #1a1a2e;
+      border: 1px solid #e94560;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1a1a2e;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #2a2a4a;
+      transition: border 0.3s;
+    }
+
+    .project-card:hover { border-color: #e94560; }
+
+    .project-card h3 {
+      color: #e94560;
+      margin-bottom: 8px;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #a0a0b0;
+      margin-bottom: 12px;
+    }
+
+    .project-card a {
+      color: #e94560;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      background: #e94560;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .contact-links a:hover { background: #c73652; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1a1a2e;
+      color: #606070;
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kishalaya Sarangi</h1>
+    <p>B.Tech Mechanical Engineering · NIT Rourkela · Batch 2025–2029</p>
+    <p>Aspiring Tech Developer · 120 Days of Code</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Kishalaya, a first-year Mechanical Engineering student at NIT Rourkela
+      with a strong passion for technology and software development. I'm currently on
+      a 120-day coding challenge where I build and push a new project to GitHub every
+      single day to grow my skills and build a strong portfolio.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C++</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Hello World</h3>
+        <p>Hello World in Python, JavaScript and C++. My very first commit.</p>
+        <a href="https://github.com/kishalayasarangi/day-01-hello-world" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>CLI Calculator</h3>
+        <p>A command-line calculator with all basic arithmetic operations.</p>
+        <a href="https://github.com/kishalayasarangi/day-02-calculator" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>Number Guessing Game</h3>
+        <p>Guess a random number between 1–100 in 7 attempts.</p>
+        <a href="https://github.com/kishalayasarangi/day-03-number-guessing-game" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>Terminal to-do app with JSON persistence across sessions.</p>
+        <a href="https://github.com/kishalayasarangi/day-04-todo-list" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>Rock Paper Scissors</h3>
+        <p>Play against the computer with live score tracking.</p>
+        <a href="https://github.com/kishalayasarangi/day-05-rock-paper-scissors" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="https://github.com/kishalayasarangi" target="_blank">GitHub</a>
+      <a href="mailto:sarangikishalaya70@gmail.com">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with HTML & CSS · Day 06 of 120 · Kishalaya Sarangi</p>
+  </footer>
+
+</body>
+</html>
